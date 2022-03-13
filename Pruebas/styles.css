@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.divTitulo{
+    text-align: center;
+    margin: 10px 0px;
+    font-weight: bold;
+    color: brown;
+}
+
+.datosInput{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: auto;
+    text-align: center;
+}
+
+.datosInput label{
+    margin-bottom: 5px;
+}
+
+.botonesInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.botonesInput button{
+    background-color: black;
+    color:wheat;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
