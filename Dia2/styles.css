@@ -1,0 +1,13 @@
+body {
+    font-size: 20px;
+}
+
+.divmayor {
+    width: 50%;
+}
+
+.divmenor {
+    background-color: rgba(20, 150, 20, 1);
+    color: white;
+    width: 50%;
+}
