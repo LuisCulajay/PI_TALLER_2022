@@ -46,11 +46,77 @@ function evaluar_cadena() {
             break
         }
     }
-
+    
     if (resultado) {
         window.alert("Correcto")
     } else {
         window.alert("Incorrecto x")
     }
+    
+}
 
+function automata() {
+    var cadena = document.getElementById("input_buscar").value
+
+    cadena = cadena.toLowerCase()
+    resultado = true
+    let caracter;
+    let estado = 0      // 5 estado de error 
+
+    for(let k=0; k<cadena.length; k++) {
+        if (resultado) {
+            caracter = cadena[k].charCodeAt()
+            switch(estado) {
+                case 0:
+                    switch(caracter) {
+                        case 47:
+                            estado = 1
+                            break
+                        default:
+                            resultado = false
+                    }
+                    break;
+                case 1:
+                    switch(caracter) {
+                        case 42:
+                            estado = 2
+                            break
+                        default:
+                            resultado = false
+                    }
+                    break;
+                case 2:
+                    switch(caracter) {
+                        case 42:
+                            estado = 3
+                            break
+                    }
+                    break;
+                case 3:
+                    switch(caracter) {
+                        case 47:
+                            estado = 4
+                            break
+                        case 42:
+                            estado = 3
+                            break
+                        default:
+                            estado = 2
+                    }
+                    break;
+                case 4:
+                    // Cadenas con mas caracteres al final
+                    resultado = false
+                    break;
+            }
+        } else {
+            break
+        }
+    }
+
+    if (resultado && estado == 4) {
+        window.alert("Válida :D")
+    } else {
+        window.alert("Incorrecto :/")
+    }
 }
