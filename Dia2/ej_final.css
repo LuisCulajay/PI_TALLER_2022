@@ -130,3 +130,16 @@ footer {
     clear: both;
     padding: 2% 0%;
 }
+
+.formulario {
+    padding: 10px 20px;
+}
+
+#boton_buscar {
+    background-color: gray;
+    color: white;
+}
+
+#boton_buscar:hover {
+    background-color: green;
+}
