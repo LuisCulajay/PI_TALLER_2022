@@ -6,27 +6,27 @@
  *  4. Código JS
  */
 
-// console.log("hola mundo :D")
-// window.alert("abc")
+console.log("hola mundo :D")
+window.alert("abc")
 
 /**
  * JS es tipado dinamico
  */
 
-// let a, b, c;
-// var a, b, c;
+let a, b, c;
+var a, b, c;
 
 /**
  * Diferencia entre LET y VAR
  * https://www.w3schools.com/js/js_let.asp
  */
 
-/* let palabra = "perro"
+let palabra = "perro"
 a = 5;
 console.log(a)
 a = "hola";
 console.log(a)
- */
+
 
 /**
  * onchange	        An HTML element has been changed
