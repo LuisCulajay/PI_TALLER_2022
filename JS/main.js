@@ -2,6 +2,7 @@
  * SECUENCIA DE EXPLICACION
  *  1. Mostrar página html y explicar
  *  2. Formas de ejecutar JS (consola y navegador)
+ *  3. script src
  *  3. Colocar funcion en click de boton
  *  4. Código JS
  */
