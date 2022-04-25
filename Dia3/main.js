@@ -1,24 +1,33 @@
-// console.log("hola mundo :D")
-// window.alert("abc")
+/**
+ * SECUENCIA DE EXPLICACION
+ *  1. Mostrar página html y explicar
+ *  2. Formas de ejecutar JS (consola y navegador)
+ *  3. script src
+ *  3. Colocar funcion en click de boton
+ *  4. Código JS
+ */
+
+console.log("hola mundo :D")
+window.alert("abc")
 
 /**
  * JS es tipado dinamico
  */
 
-// let a, b, c;
-// var a, b, c;
+let a, b, c;
+var a, b, c;
 
 /**
  * Diferencia entre LET y VAR
  * https://www.w3schools.com/js/js_let.asp
  */
 
-/* let palabra = "perro"
+let palabra = "perro"
 a = 5;
 console.log(a)
 a = "hola";
 console.log(a)
- */
+
 
 /**
  * onchange	        An HTML element has been changed
@@ -62,7 +71,7 @@ function automata() {
     resultado = true
     let caracter;
     let estado = 0      // 5 estado de error 
-
+    
     for(let k=0; k<cadena.length; k++) {
         if (resultado) {
             caracter = cadena[k].charCodeAt()
@@ -120,3 +129,5 @@ function automata() {
         window.alert("Incorrecto :/")
     }
 }
+
+console.log("funciona")
